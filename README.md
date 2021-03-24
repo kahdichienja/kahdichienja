@@ -1,8 +1,17 @@
+<p align="center">
+   
+   ![kahdichienja Github Stats](https://github-readme-stats.vercel.app/api?username=kahdichienja&count_private=true&show_icons=true&theme=dracula)
+   
+</p>
+
+-------------------------------------------------------------
+
 <h1 align="center">  Hi there ,</h1>
 <p align="center">
    -
-  <a href="https://www.linkedin.com/in/agoo-clinton-21a1411a5/">Linkedin</a> - 
-  <a href="https://twitter.com/KChienja">Twitter</a>
+     <a href="https://www.linkedin.com/in/agoo-clinton-21a1411a5/">Linkedin</a> 
+     <a href="https://twitter.com/KChienja">Twitter</a>
+   - 
 </p>
 
 
@@ -56,4 +65,4 @@ I think it’s important to love doing what you do, so the passion will continue
 
 
 
-![kahdichienja Github Stats](https://github-readme-stats.vercel.app/api?username=kahdichienja&count_private=true&show_icons=true&theme=dracula)
+
