@@ -12,6 +12,8 @@ I think it’s important to love doing what you do, so the passion will continue
 - 🌱 I’m currently learning ... Machine Learning With Artificial Intelligence (AI)
 - 💬 Ask me anything about Flutter
 -------------------------------------------------------------
+
+
 ## Languages
 <a><img align="left" alt="Djando" width="30px" src="https://image.pngaaa.com/344/1947344-middle.png" /><a/>
 <a><img align="left" alt="Flutter" width="30px" src="https://strattonapps.com/wp-content/uploads/2020/02/flutter-logo-5086DD11C5-seeklogo.com_.png" /><a/>
