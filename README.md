@@ -34,7 +34,7 @@ I think it’s important to love doing what you do, so the passion will continue
 <a><img align="left" alt="Django" width="120px" height="60px" src="https://www.rapidvaluesolutions.com/wp-content/uploads/2015/11/Apache-RapidValue.jpg" /><a/>
 <a><img align="left" alt="Flutter" width="30px" src="https://strattonapps.com/wp-content/uploads/2020/02/flutter-logo-5086DD11C5-seeklogo.com_.png" /><a/>
 <a><img align="left" alt="Dart" width="30px" src="https://www.kindpng.com/picc/m/176-1766682_dart-programming-language-hd-png-download.png" /><a/>
-<a><img align="left" alt="LAravel" width="30px" src="https://miro.medium.com/max/934/1*cPt2YI-5YxhfL3_Uhw0txA.png" /><a/>
+<a><img align="left" alt="LAravel" width="130px" src="https://miro.medium.com/max/934/1*cPt2YI-5YxhfL3_Uhw0txA.png" /><a/>
 <a><img align="left" alt="JavaScript" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /><a/>
  <a><img align="left" alt="Express" width="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" /><a/>
 <a><img align="left" alt="Node.js" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" /><a/>
