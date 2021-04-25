@@ -1,8 +1,14 @@
+
 <p align="center">
-   
-   ![kahdichienja Github Stats](https://github-readme-stats.vercel.app/api?username=kahdichienja&count_private=true&show_icons=true&theme=dracula)
-   
+   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kahdichienja&hide_langs_below=1&&show_icons=true&title_color=08fdd8&icon_color=bb2acf&text_color=ffffff&bg_color=242424"/>
+   <img align="center" src="https://github-readme-stats.vercel.app/api?username=kahdichienja&&show_icons=true&title_color=08fdd8&icon_color=bb2acf&text_color=ffffff&bg_color=242424"/>
+ </p>
+
+<p align="left"> 
+  <b>Visitor count</b><br>
+  <img src="https://profile-counter.glitch.me/kahdichienja/count.svg" />
 </p>
+
 
 -------------------------------------------------------------
 
@@ -55,12 +61,33 @@ I think it’s important to love doing what you do, so the passion will continue
 
 
 
-## Tools
-<a><img align="left" alt="Visual Studio Code" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" /><a/>
-<a><img align="left" alt="Android Studio" width="30px" src="https://2.bp.blogspot.com/-tzm1twY_ENM/XlCRuI0ZkRI/AAAAAAAAOso/BmNOUANXWxwc5vwslNw3WpjrDlgs9PuwQCLcBGAsYHQ/s1600/pasted%2Bimage%2B0.png" /><a/>
-<a><img align="left" alt="Webstorm" width="30px" src="https://img.favpng.com/22/4/18/phpstorm-jetbrains-webstorm-png-favpng-Ge8jevTtECw21jD2xX3EUvBbi.jpg" /><a/>
-<a><img align="left" alt="PhpStorm" width="30px" src="https://forum.tutorials7.com/images/phpstorm-logo.png" /><a/>
-<a><img align="left" alt="IntelliJ Idea" width="30px" src="https://p1.hiclipart.com/preview/119/386/528/clay-os-6-a-macos-icon-intellij-idea-ij-logo-png-clipart.jpg" /><a/>
+<h4><b><samp>Tools and Platform</samp></b></h4>
+
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)
+![Github Actions](https://img.shields.io/badge/Github_Actions-2088FF?style=flat-square&logo=Github-Actions&logoColor=ffffff)
+![Firebase](https://img.shields.io/badge/Firebase-ffcb2c?style=flat-square&logo=Firebase&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=flat-square&logo=Visual-Studio-Code&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=Android-Studio&logoColor=ffffff)
+![Microsoft Edge](https://img.shields.io/badge/Microsoft_Edge-0078D7?style=flat-square&logo=Microsoft-Edge&logoColor=white)
+
+##
+
+<h4><b><samp>📊 Weekly development breakdown</samp></b></h4>
+
+<!--START_SECTION:waka-->
+```text
+Dart         2 hrs 3 mins    ████████████▓░░░░░░░░░░░░   51.14 % 
+Text         37 mins         ████░░░░░░░░░░░░░░░░░░░░░   15.61 % 
+YAML         18 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.74 % 
+Other        16 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.85 % 
+JavaScript   15 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.50 % 
+```
+<!--END_SECTION:waka-->
+
+##
+
+
 
 
 
