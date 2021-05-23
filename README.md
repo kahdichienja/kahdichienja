@@ -43,7 +43,17 @@ I think it’s important to love doing what you do, so the passion will continue
 <a><img align="left" alt="Dart" width="30px" src="https://www.kindpng.com/picc/m/176-1766682_dart-programming-language-hd-png-download.png" /><a/>
 <a><img align="left" alt="LAravel" width="130px" src="https://miro.medium.com/max/934/1*cPt2YI-5YxhfL3_Uhw0txA.png" /><a/>
 <a><img align="left" alt="JavaScript" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /><a/>
+   
+      
+         
+   <a><img align="left" alt="jetpackcomposed" width="150px" height="40em" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1280%2F1*2v6zotc8p-bt9oX2mI0vkQ.png&f=1&nofb=1" /><a/>
+      
+
+   
+   <a><img align="left" alt="JavaScript"  width="150px" height="40em" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fquintagroup.com%2Fblog%2Freact-vs-vue-a-framework-to-favor-in-2019%2F%40%40download%2Fimage%2FReact%2520vs%2520Vue.jpg&f=1&nofb=1" /><a/>
+   
  <a><img align="left" alt="Express" width="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" /><a/>
+     <a><img align="left" alt="kotlin" width="50px" src="http://androiddeveloper.galileo.edu/wp-content/uploads/2017/06/kotlin-android.jpg" /><a/>
 <a><img align="left" alt="Node.js" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" /><a/>
 <a><img align="left" alt="SQL" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" /><a/>
 <a><img align="left" alt="MySQL" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" /><a/>
@@ -78,11 +88,15 @@ I think it’s important to love doing what you do, so the passion will continue
 
 <!--START_SECTION:waka-->
 ```text
-Dart         2 hrs 3 mins    ████████████▓░░░░░░░░░░░░   51.14 % 
-Text         37 mins         ████░░░░░░░░░░░░░░░░░░░░░   15.61 % 
-YAML         18 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   07.74 % 
-Other        16 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.85 % 
-JavaScript   15 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   06.50 % 
+Django       3hr             ████████████████████▓░░░░   
+React        2hr             ████████████▓░░░░░░░░░░░░ 
+Kotlin       2hr             ████████████▓░░░░░░░░░░░░ 
+Vue          2hr             ████████████▓░░░░░░░░░░░░ 
+Dart         2 hrs           ████████████▓░░░░░░░░░░░░   
+Text         37 mins         ████░░░░░░░░░░░░░░░░░░░░░   
+YAML         18 mins         ██░░░░░░░░░░░░░░░░░░░░░░░   
+Other        16 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   
+JavaScript   15 mins         █▓░░░░░░░░░░░░░░░░░░░░░░░   
 ```
 <!--END_SECTION:waka-->
 
