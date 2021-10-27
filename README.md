@@ -1,11 +1,11 @@
 <h3> ⚙️  GitHub Analytics </h3>
 <img src="https://activity-graph.herokuapp.com/graph?username=kahdichienja&show_icons=true&count_private=true&area=true&&color=333333&line=ABD6DFFF&point=89ABE3FF&hide_border=true" />
 
-<p align="center">
+<!-- <p align="center">
    <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kahdichienja&hide_langs_below=1&&show_icons=true&title_color=08fdd8&icon_color=bb2acf&text_color=ffffff&bg_color=242424"/>
    <img align="center" src="https://github-readme-stats.vercel.app/api?username=kahdichienja&&show_icons=true&title_color=08fdd8&icon_color=bb2acf&text_color=ffffff&bg_color=242424"/>
  </p>
-
+ -->
 <p align="left"> 
   <b>Visitor count</b><br>
   <img src="https://profile-counter.glitch.me/kahdichienja/count.svg" />
