@@ -24,7 +24,6 @@
 </p>
 
 
-
 -------------------------------------------------------------
 
 I'm Agoo Clinton a software engineer based in Kenya.Currently I am the Developer at SOS NETWORKS,Technical Lead DSC RONGO University.Flutter, is my main development tool for making both iOS and Android applications and web.I am also experienced in front-end and backend web development with Django, Laravel and React.
@@ -36,6 +35,27 @@ I think it’s important to love doing what you do, so the passion will continue
 - 🔭 I’m currently working on Client projects
 - 🌱 I’m currently learning ... Machine Learning With Artificial Intelligence (AI)
 - 💬 Ask me anything about Flutter
+
+
+-------------------------------------------------------------
+
+-------------------------------------------------------------
+
+
+### :octocat: My stats
+  <table>
+  <tr>
+      <td><img width="380px" align="left" src="https://github-readme-stats.vercel.app/api?username=kahdichienja&show_icons=true&count_private=true&include_all_commits&theme=tokyonight"/></td>
+      <td><img width="400px" align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kahdichienja&langs_count=8&layout=compact&theme=tokyonight"/></td>
+  </tr>   
+
+   <td><img width="400px" align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=kahdichienja&show_icons=true&locale=en&layout=compact&theme=tokyonight"/></td>  
+  </tr>
+
+</table>
+
+-------------------------------------------------------------
+
 -------------------------------------------------------------
 
 
