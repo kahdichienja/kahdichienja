@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/hero.svg" width="100%" alt="Clinton's Connected Systems Infrastructure" />
+  <img src="./assets/hero.svg?v=2" width="100%" alt="Clinton's Connected Systems Infrastructure" />
 </p>
 
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
@@ -60,7 +60,7 @@
 </table>
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=2" width="100%" />
 </p>
 
 ## 🏗️ SYSTEMS IN PRODUCTION
@@ -68,7 +68,7 @@
 The core blueprint details the hybrid network design. When cellular infrastructure fails, the system automatically falls back to an offline multi-hop LoRa mesh network, ensuring coordinate data and patient biometrics propagate to dispatch terminals.
 
 <p align="center">
-  <img src="./assets/architecture.svg" width="100%" alt="Ecosystem Systems Architecture" />
+  <img src="./assets/architecture.svg?v=2" width="100%" alt="Ecosystem Systems Architecture" />
 </p>
 
 ---
@@ -108,7 +108,7 @@ Rather than a simple wall of logos, Clinton's technology stack is organized by s
 ```
 
 <p align="center">
-  <img src="./assets/divider.svg" width="100%" />
+  <img src="./assets/divider.svg?v=2" width="100%" />
 </p>
 
 ## 🛰️ MESH NETWORK TOPOLOGY
@@ -116,7 +116,7 @@ Rather than a simple wall of logos, Clinton's technology stack is organized by s
 Clinton deploys custom peer-to-peer mesh routing protocols that propagate signals over multiple hops without requiring active cell towers or internet connections.
 
 <p align="center">
-  <img src="./assets/network.svg" width="100%" alt="LoRa Mesh Network Topology Grid" />
+  <img src="./assets/network.svg?v=2" width="100%" alt="LoRa Mesh Network Topology Grid" />
 </p>
 
 ---
@@ -124,7 +124,7 @@ Clinton deploys custom peer-to-peer mesh routing protocols that propagate signal
 ## 📁 FEATURED SYSTEMS
 
 <p align="center">
-  <img src="./assets/projects.svg" width="100%" alt="Featured Projects Panel" />
+  <img src="./assets/projects.svg?v=2" width="100%" alt="Featured Projects Panel" />
 </p>
 
 ### 1. St. John's Ambulance Dispatch
@@ -152,7 +152,7 @@ Clinton deploys custom peer-to-peer mesh routing protocols that propagate signal
 A look at the trajectory of designing, engineering, and scaling critical physical and digital infrastructure.
 
 <p align="center">
-  <img src="./assets/timeline.svg" width="100%" alt="Ecosystem Growth Timeline" />
+  <img src="./assets/timeline.svg?v=2" width="100%" alt="Ecosystem Growth Timeline" />
 </p>
 
 ---
@@ -162,7 +162,7 @@ A look at the trajectory of designing, engineering, and scaling critical physica
 A simulated readout of the diagnostic sequence on startup across Clinton's engineering nodes:
 
 <p align="center">
-  <img src="./assets/terminal.svg" width="100%" alt="System Terminal Readout" />
+  <img src="./assets/terminal.svg?v=2" width="100%" alt="System Terminal Readout" />
 </p>
 
 ---
@@ -170,7 +170,7 @@ A simulated readout of the diagnostic sequence on startup across Clinton's engin
 ## 🎚️ CONTROL ROOM STATUS
 
 <p align="center">
-  <img src="./assets/footer.svg" width="100%" alt="Ecosystem Footer Status Module" />
+  <img src="./assets/footer.svg?v=2" width="100%" alt="Ecosystem Footer Status Module" />
 </p>
 
 <p align="center">
