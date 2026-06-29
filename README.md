@@ -6,7 +6,7 @@
   <tr>
     <td width="50%" valign="top">
       <h1>BUILDING MISSION-CRITICAL SYSTEMS</h1>
-      <p><b>Clinton</b> — Software Systems Engineer specializing in real-time emergency response infrastructure, embedded edge arrays, and scalable distributed architectures.</p>
+      <p><b>I am Clinton Agoo (agooclinton@gmail.com)</b> — Software Systems Engineer specializing in real-time emergency response infrastructure, embedded edge arrays, and scalable distributed architectures.</p>
     </td>
     <td width="50%" valign="top" align="right">
       <samp>
