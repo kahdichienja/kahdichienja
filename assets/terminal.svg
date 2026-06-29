@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      
+      .terminal-txt {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 12px;
+        fill: #94A3B8;
+      }
+      .green-txt {
+        fill: #22C55E;
+        font-weight: 700;
+      }
+      .cyan-txt {
+        fill: #06B6D4;
+        font-weight: 700;
+      }
+      .amber-txt {
+        fill: #F59E0B;
+      }
+      
+      .blink-cursor {
+        animation: blink 1.2s infinite steps(2, start);
+      }
+      .crt-line {
+        animation: scanline 8s infinite linear;
+      }
+      
+      @keyframes blink {
+        to { visibility: hidden; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(320px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Backdrop -->
+  <rect width="1200" height="320" rx="12" fill="#030712" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1.5" />
+  
+  <!-- Header Bar -->
+  <path d="M 0 12 Q 0 0 12 0 L 1188 0 Q 1200 0 1200 12 L 1200 35 L 0 35 Z" fill="#111827" fill-opacity="0.9" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
+  
+  <!-- Window Control Buttons (macOS style) -->
+  <circle cx="25" cy="17" r="6" fill="#EF4444" />
+  <circle cx="45" cy="17" r="6" fill="#F59E0B" />
+  <circle cx="65" cy="17" r="6" fill="#22C55E" />
+  
+  <!-- Terminal Title -->
+  <text x="600" y="21" family="'JetBrains Mono', monospace" font-size="11" fill="#64748B" font-weight="700" text-anchor="middle">CLINTON@MISSION-CONTROL: ~/_SYS_DIAGNOSTICS</text>
+
+  <!-- Diagnostic Terminal Output Logs -->
+  <g transform="translate(30, 70)" class="terminal-txt">
+    <!-- Log Line 1 -->
+    <text x="0" y="0"><tspan class="green-txt">[ OK ]</tspan> Initializing ESP32 edge transceivers (RFM95W LoRa Modules)...</text>
+    
+    <!-- Log Line 2 -->
+    <text x="0" y="20"><tspan class="green-txt">[ OK ]</tspan> Mounting partition /dev/sda1 (PostgreSQL multi-AZ cluster master replication)...</text>
+    
+    <!-- Log Line 3 -->
+    <text x="0" y="40"><tspan class="green-txt">[ OK ]</tspan> Synchronizing GNSS tracking modules. 14 satellites acquired. 3D fix established (HDOP: 0.85).</text>
+    
+    <!-- Log Line 4 -->
+    <text x="0" y="60"><tspan class="cyan-txt">[ INFO ]</tspan> System mesh layout mapped: 6 hops active, 42 operational routing nodes detected.</text>
+    
+    <!-- Log Line 5 -->
+    <text x="0" y="80"><tspan class="green-txt">[ OK ]</tspan> Launching Django REST engine &amp; Django Channels WebSocket listeners...</text>
+    
+    <!-- Log Line 6 -->
+    <text x="0" y="100"><tspan class="green-txt">[ OK ]</tspan> Kubernetes ingress controller active. Health checks at route <tspan fill="#F8FAFC">/healthz</tspan> nominal.</text>
+    
+    <!-- Log Line 7 -->
+    <text x="0" y="120"><tspan class="green-txt">[ OK ]</tspan> SQLite gateway failover spools listening on partition <tspan fill="#F8FAFC">/dev/sdb2</tspan> (buffered: 0B).</text>
+    
+    <!-- Log Line 8 -->
+    <text x="0" y="140"><tspan class="cyan-txt">[ INFO ]</tspan> Listening for biometric telemetry data on BLE UUID <tspan class="amber-txt">0000ffe1-0000-1000-8000-00805f9b34fb</tspan>.</text>
+    
+    <!-- Log Line 9 -->
+    <text x="0" y="160"><tspan class="green-txt">[ OK ]</tspan> Flutter Dispatch receiver client authenticated (User ID: <tspan fill="#F8FAFC">AMB_RESPONDER_N12</tspan>).</text>
+    
+    <!-- Log Line 10 -->
+    <text x="0" y="180"><tspan class="green-txt">[ OK ]</tspan> All ecosystem endpoints reporting status <tspan fill="#22C55E" font-weight="700">NOMINAL</tspan>.</text>
+    
+    <!-- Active Prompt Command line -->
+    <text x="0" y="210" fill="#F8FAFC" font-weight="700">clinton@mission-control ~ % <tspan font-weight="400" fill="#94A3B8">listen --interface=lora0 --stream=metrics</tspan><tspan fill="#06B6D4" class="blink-cursor" font-weight="700">_</tspan></text>
+  </g>
+
+  <!-- CRT Terminal Scanline Shadow -->
+  <line x1="2" y1="0" x2="1198" y2="0" stroke="#ffffff" stroke-opacity="0.03" stroke-width="2" class="crt-line" />
+</svg>

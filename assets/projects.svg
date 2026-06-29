@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="100%" height="100%" fill="none">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap');
+    
+    .lbl-title {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      fill: #F8FAFC;
+    }
+    .lbl-sub {
+      font-family: 'Outfit', sans-serif;
+      font-weight: 400;
+      font-size: 11px;
+      fill: #64748B;
+    }
+    .lbl-mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      fill: #94A3B8;
+    }
+    .status-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      font-size: 9px;
+    }
+    
+    /* CSS Animations */
+    .pulse-status {
+      animation: heartbeat 2s infinite ease-in-out;
+    }
+    .bar-grow-1 {
+      animation: grow1 4s infinite alternate ease-in-out;
+    }
+    .bar-grow-2 {
+      animation: grow2 3.5s infinite alternate ease-in-out;
+    }
+    .bar-grow-3 {
+      animation: grow3 5s infinite alternate ease-in-out;
+    }
+    
+    @keyframes heartbeat {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+    @keyframes grow1 {
+      0% { width: 40px; }
+      100% { width: 140px; }
+    }
+    @keyframes grow2 {
+      0% { width: 110px; }
+      100% { width: 70px; }
+    }
+    @keyframes grow3 {
+      0% { width: 60px; }
+      100% { width: 120px; }
+    }
+  </style>
+  
+  <defs>
+    <!-- Background grid lines for cards -->
+    <pattern id="cardGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <line x1="20" y1="0" x2="0" y2="0" stroke="#ffffff" stroke-opacity="0.015" stroke-width="0.5" />
+      <line x1="0" y1="20" x2="0" y2="0" stroke="#ffffff" stroke-opacity="0.015" stroke-width="0.5" />
+    </pattern>
+  </defs>
+
+  <!-- Dark Canvas -->
+  <rect width="100%" height="100%" fill="#030712" />
+
+  <!-- PROJECT CARD 1: St. John's Ambulance -->
+  <g transform="translate(50, 30)">
+    <!-- Glassmorphic panel backdrop -->
+    <rect width="340" height="200" rx="10" fill="#111827" fill-opacity="0.6" stroke="#06B6D4" stroke-opacity="0.25" stroke-width="1.5" />
+    <rect width="340" height="200" rx="10" fill="url(#cardGrid)" />
+    
+    <!-- Top Bar -->
+    <circle cx="25" cy="25" r="4" fill="#06B6D4" class="pulse-status" />
+    <text x="38" y="28" class="lbl-title">St. John's Ambulance</text>
+    <text x="38" y="42" class="lbl-sub">Emergency Dispatch &amp; Fleet Tracker</text>
+    
+    <!-- Telemetry display -->
+    <g transform="translate(25, 75)" class="lbl-mono">
+      <text x="0" y="0">STATUS: <tspan class="status-badge" fill="#06B6D4">ACTIVE_DEVELOPMENT</tspan></text>
+      <text x="0" y="16">ARCHITECTURE: EVENT-DRIVEN / KAFKA</text>
+      <text x="0" y="32">BACKEND: FASTAPI MICROSERVICES</text>
+      <text x="0" y="48">FRONTEND: REACT / MUI / LEAFLET MAP</text>
+      <text x="0" y="64">INFRA: REDIS / PG / MINIO / PROXY</text>
+    </g>
+
+    <!-- Metrics graphic (Bar) -->
+    <g transform="translate(25, 160)">
+      <rect x="0" y="0" width="290" height="8" rx="4" fill="#ffffff" fill-opacity="0.05" />
+      <rect x="0" y="0" width="70" height="8" rx="4" fill="#06B6D4" class="bar-grow-1" />
+      <text x="290" y="-8" class="lbl-mono" text-anchor="end" fill="#06B6D4">DEV_PHASE: 2/3</text>
+    </g>
+  </g>
+
+  <!-- PROJECT CARD 2: Nacare HMP -->
+  <g transform="translate(430, 30)">
+    <!-- Glassmorphic panel backdrop -->
+    <rect width="340" height="200" rx="10" fill="#111827" fill-opacity="0.6" stroke="#22C55E" stroke-opacity="0.25" stroke-width="1.5" />
+    <rect width="340" height="200" rx="10" fill="url(#cardGrid)" />
+    
+    <!-- Top Bar -->
+    <circle cx="25" cy="25" r="4" fill="#22C55E" class="pulse-status" />
+    <text x="38" y="28" class="lbl-title">Nacare HMP</text>
+    <text x="38" y="42" class="lbl-sub">Inpatient &amp; Outpatient Portal</text>
+    
+    <!-- Telemetry display -->
+    <g transform="translate(25, 75)" class="lbl-mono">
+      <text x="0" y="0">STATUS: <tspan class="status-badge" fill="#22C55E">PRODUCTION_ACTIVE</tspan></text>
+      <text x="0" y="16">REGISTRY: INPATIENTS &amp; OUTPATIENTS</text>
+      <text x="0" y="32">MODULES: TRIAGE / BED ASSIGN / BILLING</text>
+      <text x="0" y="48">FRONTEND UI: MATERIAL UI (MUI)</text>
+      <text x="0" y="64">DATABASE: CLUSTERED POSTGRESQL</text>
+    </g>
+
+    <!-- Metrics graphic (Bar) -->
+    <g transform="translate(25, 160)">
+      <rect x="0" y="0" width="290" height="8" rx="4" fill="#ffffff" fill-opacity="0.05" />
+      <rect x="0" y="0" width="140" height="8" rx="4" fill="#22C55E" class="bar-grow-1" />
+      <text x="290" y="-8" class="lbl-mono" text-anchor="end" fill="#22C55E">UPTIME: 99.99%</text>
+    </g>
+  </g>
+
+  <!-- PROJECT CARD 3: LoRaMesh Tracker -->
+  <g transform="translate(810, 30)">
+    <!-- Glassmorphic panel backdrop -->
+    <rect width="340" height="200" rx="10" fill="#111827" fill-opacity="0.6" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="1.5" />
+    <rect width="340" height="200" rx="10" fill="url(#cardGrid)" />
+    
+    <!-- Top Bar -->
+    <circle cx="25" cy="25" r="4" fill="#8B5CF6" class="pulse-status" />
+    <text x="38" y="28" class="lbl-title">LoRaMesh Tracker</text>
+    <text x="38" y="42" class="lbl-sub">Edge GNSS Mesh System</text>
+    
+    <!-- Telemetry display -->
+    <g transform="translate(25, 75)" class="lbl-mono">
+      <text x="0" y="0">STATUS: <tspan class="status-badge" fill="#8B5CF6">NOMINAL_MESH</tspan></text>
+      <text x="0" y="16">TRANSCEIVER: ESP32 / SX1276</text>
+      <text x="0" y="32">ROUTING: HOP_METRIC_ADAPTIVE</text>
+      <text x="0" y="48">FREQUENCY: 868 MHz ISM</text>
+      <text x="0" y="64">GPS_LOCK: 14 SATELLITES (3D)</text>
+    </g>
+
+    <!-- Metrics graphic (Bar) -->
+    <g transform="translate(25, 160)">
+      <rect x="0" y="0" width="290" height="8" rx="4" fill="#ffffff" fill-opacity="0.05" />
+      <rect x="0" y="0" width="105" height="8" rx="4" fill="#8B5CF6" class="bar-grow-3" />
+      <text x="290" y="-8" class="lbl-mono" text-anchor="end" fill="#8B5CF6">SIGNAL: -76dBm</text>
+    </g>
+  </g>
+</svg>

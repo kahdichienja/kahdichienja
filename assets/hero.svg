@@ -1,0 +1,291 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      
+      .title-text {
+        font-family: 'Outfit', -apple-system, sans-serif;
+        font-weight: 700;
+        fill: #F8FAFC;
+        letter-spacing: -0.03em;
+      }
+      .mono-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 11px;
+        fill: #94A3B8;
+      }
+      .node-title {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        fill: #F8FAFC;
+      }
+      .node-desc {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        fill: #94A3B8;
+      }
+      
+      /* Animation Classes */
+      .pulse-primary {
+        animation: pulsePrimary 3s infinite ease-in-out;
+      }
+      .pulse-secondary {
+        animation: pulseSecondary 2.5s infinite ease-in-out;
+      }
+      .pulse-accent {
+        animation: pulseAccent 4s infinite ease-in-out;
+      }
+      .pulse-emergency {
+        animation: pulseEmergency 1.8s infinite ease-in-out;
+      }
+      .signal-flow {
+        animation: flowFast 4s infinite linear;
+      }
+      .signal-flow-reverse {
+        animation: flowReverse 5s infinite linear;
+      }
+      
+      @keyframes pulsePrimary {
+        0%, 100% { r: 6px; opacity: 0.2; }
+        50% { r: 12px; opacity: 0.6; }
+      }
+      @keyframes pulseSecondary {
+        0%, 100% { r: 6px; opacity: 0.15; }
+        50% { r: 14px; opacity: 0.5; }
+      }
+      @keyframes pulseAccent {
+        0%, 100% { r: 5px; opacity: 0.2; }
+        50% { r: 10px; opacity: 0.55; }
+      }
+      @keyframes pulseEmergency {
+        0%, 100% { r: 6px; opacity: 0.3; }
+        50% { r: 16px; opacity: 0.8; }
+      }
+      @keyframes flowFast {
+        from { stroke-dashoffset: 80; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes flowReverse {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 100; }
+      }
+    </style>
+
+    <!-- Glowing Filters -->
+    <filter id="neonPrimary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="neonSecondary" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="neonEmergency" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Gradients -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="secondaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#22C55E" />
+    </linearGradient>
+    <linearGradient id="emergencyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    
+    <!-- Background Dot Pattern -->
+    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.5" fill="#ffffff" fill-opacity="0.03" />
+    </pattern>
+  </defs>
+
+  <!-- Deep Void Background -->
+  <rect width="100%" height="100%" fill="#030712" />
+  
+  <!-- Subtle Grid Backdrop -->
+  <rect width="100%" height="100%" fill="url(#gridPattern)" />
+
+  <!-- Connecting Ecosystem Paths -->
+  <!-- Top level connectivity -->
+  <path d="M 600 60 L 350 110" stroke="#06B6D4" stroke-opacity="0.15" stroke-width="1.5" />
+  <path d="M 600 60 L 600 170" stroke="#4F46E5" stroke-opacity="0.2" stroke-width="2" />
+  <path d="M 350 110 L 150 280" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="1.5" />
+  <path d="M 350 110 L 600 370" stroke="#06B6D4" stroke-opacity="0.15" stroke-width="1.5" />
+
+  <!-- Cloud to Dispatch & Edge -->
+  <path d="M 600 230 L 600 370" stroke="#4F46E5" stroke-opacity="0.2" stroke-width="2" />
+  <path d="M 600 200 L 950 200" stroke="#EF4444" stroke-opacity="0.2" stroke-width="2" />
+  <path d="M 950 230 L 950 360" stroke="#EF4444" stroke-opacity="0.15" stroke-width="1.5" />
+
+  <!-- Edge Mesh Cluster -->
+  <path d="M 150 310 L 350 410" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="1.5" />
+  <path d="M 350 440 L 600 400" stroke="#06B6D4" stroke-opacity="0.15" stroke-width="1.5" />
+  <path d="M 600 400 L 900 390" stroke="#06B6D4" stroke-opacity="0.15" stroke-width="1.5" />
+
+  <!-- ANIMATED FLOW PATHS (Data Packets) -->
+  <!-- Satellite -> Cloud -->
+  <path d="M 600 60 L 600 170" stroke="#4F46E5" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 90" class="signal-flow" />
+  
+  <!-- Cloud -> Dispatch (Emergency route) -->
+  <path d="M 600 200 L 950 200" stroke="#EF4444" stroke-opacity="0.9" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="15 120" class="signal-flow" />
+  
+  <!-- LoRa Mesh -> ESP32 Gateway -->
+  <path d="M 350 440 L 600 400" stroke="#06B6D4" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="8 60" class="signal-flow" />
+  
+  <!-- GPS Sync: GNSS -> ESP32 Gateway -->
+  <path d="M 350 110 L 600 370" stroke="#06B6D4" stroke-opacity="0.7" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 70" class="signal-flow" />
+
+  <!-- Edge Sensors -> Mesh -->
+  <path d="M 150 310 L 350 410" stroke="#8B5CF6" stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 50" class="signal-flow" />
+
+  <!-- Gateway -> Cloud Telemetry Upload -->
+  <path d="M 600 370 L 600 230" stroke="#4F46E5" stroke-opacity="0.9" stroke-width="2" stroke-linecap="round" stroke-dasharray="12 100" class="signal-flow-reverse" />
+
+  <!-- Dispatch -> Ambulance Client -->
+  <path d="M 950 230 L 950 360" stroke="#EF4444" stroke-opacity="0.8" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 80" class="signal-flow" />
+
+
+  <!-- GLOWING NODE BACKGROUNDS -->
+  <g opacity="0.3" filter="url(#neonPrimary)">
+    <!-- Satellite -->
+    <circle cx="600" cy="60" r="15" fill="#4F46E5" />
+    <!-- Cloud Core -->
+    <circle cx="600" cy="200" r="30" fill="#4F46E5" />
+    <!-- Dispatch Core -->
+    <circle cx="950" cy="200" r="22" fill="#EF4444" filter="url(#neonEmergency)" />
+  </g>
+
+  <!-- GRAPHICAL NODE CARDS & LABELS -->
+
+  <!-- NODE 1: Satellite Network -->
+  <g transform="translate(600, 60)">
+    <circle cx="0" cy="0" r="25" fill="#111827" stroke="#4F46E5" stroke-width="1.5" />
+    <!-- Satellite symbol -->
+    <path d="M -10 -5 L 10 5 M -5 -10 L 5 10 M -8 -8 L 8 8" stroke="#F8FAFC" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="4" fill="#06B6D4" />
+    <circle cx="0" cy="0" r="6" stroke="#06B6D4" stroke-width="1.5" class="pulse-secondary" />
+    <text x="35" y="0" class="node-title">SATELLITE NET</text>
+    <text x="35" y="15" class="node-desc">GNSS Sync / Orbital</text>
+  </g>
+
+  <!-- NODE 2: GNSS Constellation -->
+  <g transform="translate(350, 110)">
+    <circle cx="0" cy="0" r="18" fill="#111827" stroke="#06B6D4" stroke-width="1.5" />
+    <!-- Orbit symbol -->
+    <ellipse cx="0" cy="0" rx="10" ry="4" stroke="#06B6D4" stroke-width="1" transform="rotate(30)" />
+    <circle cx="0" cy="0" r="2" fill="#F8FAFC" />
+    <circle cx="0" cy="0" r="6" stroke="#06B6D4" stroke-width="1" class="pulse-accent" />
+    <text x="-135" y="-5" class="node-title" text-anchor="start">GNSS POSITIONING</text>
+    <text x="-135" y="10" class="node-desc" text-anchor="start">1.2m Accuracy Epoch</text>
+  </g>
+
+  <!-- NODE 3: Cloud Infrastructure (Kubernetes & Django) -->
+  <g transform="translate(600, 200)">
+    <!-- Glassmorphic Card -->
+    <rect x="-70" y="-30" width="140" height="60" rx="8" fill="#111827" fill-opacity="0.8" stroke="#4F46E5" stroke-width="2" />
+    <!-- Server lines -->
+    <line x1="-50" y1="-10" x2="-20" y2="-10" stroke="#F8FAFC" stroke-width="2" />
+    <line x1="-50" y1="0" x2="-10" y2="0" stroke="#F8FAFC" stroke-width="2" />
+    <line x1="-50" y1="10" x2="-30" y2="10" stroke="#F8FAFC" stroke-width="2" />
+    <circle cx="50" cy="-10" r="3" fill="#22C55E" />
+    <circle cx="50" cy="0" r="3" fill="#22C55E" />
+    <circle cx="50" cy="10" r="3" fill="#06B6D4" />
+    
+    <text x="0" y="38" class="node-title" text-anchor="middle">CLOUD API &amp; K8S</text>
+    <text x="0" y="52" class="node-desc" text-anchor="middle">Django / Postgres Cluster</text>
+  </g>
+
+  <!-- NODE 4: Dispatch Command Center -->
+  <g transform="translate(950, 200)">
+    <!-- Hexagon emergency badge -->
+    <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" fill="#111827" stroke="#EF4444" stroke-width="2" />
+    <path d="M -6 -6 L 6 6 M 6 -6 L -6 6" stroke="#EF4444" stroke-width="2" />
+    <circle cx="0" cy="0" r="6" stroke="#EF4444" stroke-width="1.5" class="pulse-emergency" />
+    <text x="30" y="-3" class="node-title">DISPATCH CENTER</text>
+    <text x="30" y="12" class="node-desc pulse-emergency" fill="#EF4444">Real-Time Routing</text>
+  </g>
+
+  <!-- NODE 5: Emergency Ambulance Clients -->
+  <g transform="translate(950, 360)">
+    <rect x="-55" y="-20" width="110" height="40" rx="6" fill="#111827" stroke="#EF4444" stroke-width="1.5" />
+    <text x="0" y="-3" class="node-title" text-anchor="middle" font-size="12">AMBULANCES</text>
+    <text x="0" y="11" class="node-desc" text-anchor="middle" fill="#94A3B8" font-size="9">Flutter / GIS Navigation</text>
+    <!-- Pulse tag -->
+    <circle cx="-42" cy="-10" r="2.5" fill="#EF4444" />
+  </g>
+
+  <!-- NODE 6: ESP32 Edge Gateway -->
+  <g transform="translate(600, 400)">
+    <rect x="-60" y="-25" width="120" height="50" rx="6" fill="#111827" stroke="#06B6D4" stroke-width="2" />
+    <!-- ESP32 Chip representation -->
+    <rect x="-48" y="-12" width="20" height="24" rx="2" fill="#1f2937" stroke="#94A3B8" stroke-width="1" />
+    <line x1="-28" y1="-8" x2="-25" y2="-8" stroke="#94A3B8" stroke-width="1" />
+    <line x1="-28" y1="-2" x2="-25" y2="-2" stroke="#94A3B8" stroke-width="1" />
+    <line x1="-28" y1="4" x2="-25" y2="4" stroke="#94A3B8" stroke-width="1" />
+    
+    <text x="15" y="0" class="node-title" font-size="12">ESP32 EDGE</text>
+    <text x="15" y="14" class="node-desc" font-size="9">LoRa Router Node</text>
+  </g>
+
+  <!-- NODE 7: LoRa Mesh Network -->
+  <g transform="translate(350, 440)">
+    <circle cx="0" cy="0" r="16" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
+    <!-- Mesh icon -->
+    <circle cx="-6" cy="-4" r="2" fill="#8B5CF6" />
+    <circle cx="6" cy="-4" r="2" fill="#8B5CF6" />
+    <circle cx="0" cy="6" r="2" fill="#8B5CF6" />
+    <line x1="-6" y1="-4" x2="6" y2="-4" stroke="#8B5CF6" stroke-width="1" />
+    <line x1="6" y1="-4" x2="0" y2="6" stroke="#8B5CF6" stroke-width="1" />
+    <line x1="0" y1="6" x2="-6" y2="-4" stroke="#8B5CF6" stroke-width="1" />
+    
+    <text x="24" y="-3" class="node-title">LORA MESH</text>
+    <text x="24" y="11" class="node-desc">868MHz Fail-safe Topology</text>
+  </g>
+
+  <!-- NODE 8: Medical Sensors & BLE Edge -->
+  <g transform="translate(150, 300)">
+    <circle cx="0" cy="0" r="20" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
+    <!-- Pulse waveform in sensor icon -->
+    <path d="M -10 0 L -5 0 L -2 -8 L 2 8 L 5 0 L 10 0" stroke="#8B5CF6" stroke-width="1.5" fill="none" />
+    <circle cx="0" cy="0" r="5" stroke="#8B5CF6" stroke-width="1" class="pulse-accent" />
+    <text x="-120" y="-3" class="node-title" text-anchor="start">BIOMETRIC SENSORS</text>
+    <text x="-120" y="11" class="node-desc" text-anchor="start">BLE Edge Telemetry</text>
+  </g>
+
+  <!-- Floating Telemetry HUD items -->
+  <g transform="translate(50, 60)" class="mono-text">
+    <text x="0" y="0" fill="#06B6D4" font-weight="700">SYS_SYS_ECOSYSTEM: ACTIVE</text>
+    <text x="0" y="18">NODE_COUNT: 147 EDGE LABS</text>
+    <text x="0" y="34">LORA_ROUTING: HYBRID_FALLBACK</text>
+    <path d="M 0 45 L 180 45" stroke="#06B6D4" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="2" cy="52" r="2" fill="#22C55E" />
+    <text x="10" y="55" fill="#22C55E">NET_STATUS: NOMINAL (0% LOSS)</text>
+  </g>
+
+  <g transform="translate(980, 60)" class="mono-text" text-anchor="start">
+    <text x="0" y="0" fill="#EF4444" font-weight="700">DISPATCH CONTROL MODULE</text>
+    <text x="0" y="18">INCIDENT_Q: 0 ACTIVE</text>
+    <text x="0" y="34">RESPONSE_LATENCY: &lt; 280ms</text>
+    <path d="M 0 45 L 200 45" stroke="#EF4444" stroke-opacity="0.3" stroke-width="1" />
+    <circle cx="2" cy="52" r="2" fill="#06B6D4" />
+    <text x="10" y="55" fill="#06B6D4">UPLINK: GNSS_ACTIVE (12 SAT)</text>
+  </g>
+</svg>

@@ -1,111 +1,178 @@
-<h3> ⚙️  GitHub Analytics </h3>
-<img src="https://activity-graph.herokuapp.com/graph?username=kahdichienja&show_icons=true&count_private=true&area=true&&color=333333&line=ABD6DFFF&point=89ABE3FF&hide_border=true" />
-
-<!-- <p align="center">
-   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kahdichienja&hide_langs_below=1&&show_icons=true&title_color=08fdd8&icon_color=bb2acf&text_color=ffffff&bg_color=242424"/>
-   <img align="center" src="https://github-readme-stats.vercel.app/api?username=kahdichienja&&show_icons=true&title_color=08fdd8&icon_color=bb2acf&text_color=ffffff&bg_color=242424"/>
- </p>
- -->
-<p align="left"> 
-  <b>Visitor count</b><br>
-  <img src="https://profile-counter.glitch.me/kahdichienja/count.svg" />
-</p>
-
-
-
--------------------------------------------------------------
-
-<h1 align="center">  Hi there ,</h1>
 <p align="center">
-   -
-     <a href="https://www.linkedin.com/in/agoo-clinton-21a1411a5/">Linkedin</a> 
-     <a href="https://twitter.com/KChienja">Twitter</a>
-   - 
+  <img src="./assets/hero.svg" width="100%" alt="Clinton's Connected Systems Infrastructure" />
 </p>
 
-
--------------------------------------------------------------
-
-I'm Agoo Clinton a software engineer based in Kenya.Currently I am the Developer. Flutter, is my main development tool for making both iOS and Android applications and web.I am also experienced in front-end and backend web development with Django, Laravel and React.
-I'm very passionate about technologies, I spend much of my spare time learning and obsessing about the latest  technologies,both for mobile and web. 
-I think it’s important to love doing what you do, so the passion will continue to motivate and improve your skills.
-
-
--------------------------------------------------------------
-- 🔭 I’m currently working on Client projects
-- 🌱 I’m currently learning ... Machine Learning With Artificial Intelligence (AI)
-- 💬 Ask me anything about Flutter
-
-
--------------------------------------------------------------
-
--------------------------------------------------------------
-
-
-### :octocat: My stats
-  <table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-      <td><img width="380px" align="left" src="https://github-readme-stats.vercel.app/api?username=kahdichienja&show_icons=true&count_private=true&include_all_commits&theme=tokyonight"/></td>
-      <td><img width="400px" align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kahdichienja&langs_count=8&layout=compact&theme=tokyonight"/></td>
-  </tr>   
-
-   <td><img width="400px" align="left" src="https://github-readme-streak-stats.herokuapp.com/?user=kahdichienja&show_icons=true&locale=en&layout=compact&theme=tokyonight"/></td>  
+    <td width="50%" valign="top">
+      <h1>BUILDING MISSION-CRITICAL SYSTEMS</h1>
+      <p><b>Clinton</b> — Software Systems Engineer specializing in real-time emergency response infrastructure, embedded edge arrays, and scalable distributed architectures.</p>
+    </td>
+    <td width="50%" valign="top" align="right">
+      <samp>
+        <b>SYSTEM STATUS:</b> <font color="#22C55E">🟢 NOMINAL</font><br>
+        <b>NETWORK TUNNEL:</b> <font color="#06B6D4">🔵 ACTIVE</font><br>
+        <b>SECURITY PROTOCOL:</b> <font color="#8B5CF6">🟣 TLS 1.3</font><br>
+        <b>LAST TELEMETRY UPLINK:</b> 2026-06-29T11:45:17Z
+      </samp>
+    </td>
   </tr>
-
 </table>
 
--------------------------------------------------------------
+---
 
--------------------------------------------------------------
+## 🎛️ MISSION CONTROL PANEL
 
+> **OPERATIONS DIRECTIVE:** Engineering systems that guarantee operation when conventional networks fail. Bridging raw embedded hardware sensors with enterprise cloud gateways to drive real-time GIS navigation and emergency dispatch.
 
-## Languages
-<a><img align="left" alt="Django" width="120px" height="60px" src="https://www.rapidvaluesolutions.com/wp-content/uploads/2015/11/Apache-RapidValue.jpg" /><a/>
-<a><img align="left" alt="Flutter" width="30px" src="https://strattonapps.com/wp-content/uploads/2020/02/flutter-logo-5086DD11C5-seeklogo.com_.png" /><a/>
-<a><img align="left" alt="Dart" width="30px" src="https://www.kindpng.com/picc/m/176-1766682_dart-programming-language-hd-png-download.png" /><a/>
-<a><img align="left" alt="LAravel" width="130px" src="https://miro.medium.com/max/934/1*cPt2YI-5YxhfL3_Uhw0txA.png" /><a/>
- <a><img align="left" alt="JavaScript" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" /><a/>
-<a><img align="left" alt="Swift UI" width="150px" height="40em" src="https://1.bp.blogspot.com/-bKGXNhIeLC8/YLrLvNBJ4kI/AAAAAAAADU4/wTvaxDu5aoQNxpalvP1rxvj0pbpw9P7mQCPcBGAYYCw/s740/logo-swiftui.jpg" /><a/>      
-<a><img align="left" alt="jetpackcomposed" width="150px" height="40em" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F1280%2F1*2v6zotc8p-bt9oX2mI0vkQ.png&f=1&nofb=1" /><a/>
-      
+<table width="100%">
+  <tr>
+    <th align="left" width="33%">🛰️ POSITIONING &amp; EDGE</th>
+    <th align="left" width="33%">🧬 DISTRIBUTED ROUTING</th>
+    <th align="left" width="34%">💻 TELEMETRY DISPATCH</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>GNSS / GPS Epoch Sync</li>
+        <li>ESP32 Edge Microcontrollers</li>
+        <li>LoRa Mesh Topology</li>
+        <li>Bluetooth Low Energy Beacons</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Django REST API Clusters</li>
+        <li>WebSocket Live Streams</li>
+        <li>Celery Async Pipelines</li>
+        <li>PostgreSQL / Redis Multi-AZ</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Flutter Navigation Suite</li>
+        <li>GIS Routing Coordinates</li>
+        <li>Kubernetes Pod Replicas</li>
+        <li>Dockerized Containers</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-   
-   <a><img align="left" alt="JavaScript"  width="150px" height="40em" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fquintagroup.com%2Fblog%2Freact-vs-vue-a-framework-to-favor-in-2019%2F%40%40download%2Fimage%2FReact%2520vs%2520Vue.jpg&f=1&nofb=1" /><a/>
-   
- <a><img align="left" alt="Express" width="50px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/express/express.png" /><a/>
-     <a><img align="left" alt="kotlin" width="50px" src="http://androiddeveloper.galileo.edu/wp-content/uploads/2017/06/kotlin-android.jpg" /><a/>
-<a><img align="left" alt="Node.js" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" /><a/>
-<a><img align="left" alt="SQL" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" /><a/>
-<a><img align="left" alt="MySQL" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" /><a/>
-<br />
-<br />
-<br/>
-   
- ##   Package Manager
-<a><img align="left" alt="Npm" width="40px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/npm/npm.png" /><a/>
-  <a><img align="left" alt="Composer" width="40px" src="https://getcomposer.org/img/logo-composer-transparent4.png" /><a/>
-    
-<br />
-<br />
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" />
+</p>
 
+## 🏗️ SYSTEMS IN PRODUCTION
 
+The core blueprint details the hybrid network design. When cellular infrastructure fails, the system automatically falls back to an offline multi-hop LoRa mesh network, ensuring coordinate data and patient biometrics propagate to dispatch terminals.
 
+<p align="center">
+  <img src="./assets/architecture.svg" width="100%" alt="Ecosystem Systems Architecture" />
+</p>
 
+---
 
-<h4><b><samp>Tools and Platform</samp></b></h4>
+## 🛠️ TECHNOLOGY ECOSYSTEM
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github)
-![Github Actions](https://img.shields.io/badge/Github_Actions-2088FF?style=flat-square&logo=Github-Actions&logoColor=ffffff)
-![Firebase](https://img.shields.io/badge/Firebase-ffcb2c?style=flat-square&logo=Firebase&logoColor=white)
-![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=flat-square&logo=Visual-Studio-Code&logoColor=white)
-![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat-square&logo=Android-Studio&logoColor=ffffff)
-![Microsoft Edge](https://img.shields.io/badge/Microsoft_Edge-0078D7?style=flat-square&logo=Microsoft-Edge&logoColor=white)
+Rather than a simple wall of logos, Clinton's technology stack is organized by structural responsibility in the systems stack:
 
+```ini
+[EMBEDDED EDGE LAYER]
+  ├── Core MCU    :: ESP32 / ESP8266 / Arduino RTOS
+  ├── Telemetry   :: GNSS / GPS L1/L5 Epoch Tracker
+  ├── RF Mesh     :: LoRa (868MHz / 915MHz ISM) / SX1276
+  └── Sensors     :: BLE Biometrics (ECG, Heart Rate) / I2C / SPI
 
+[ROUTING & GATEWAY]
+  ├── Bridges     :: MQTT / WebSockets / HTTPS Proxy
+  ├── Local Cache :: SQLite Buffer (Encrypted local storage)
+  └── Cellular    :: SIM7600 4G LTE Fallback
 
+[DISTRIBUTED CORE]
+  ├── Application :: Django / FastAPI / Laravel
+  ├── Sockets     :: Django Channels / WebSockets
+  ├── Task Queue  :: Celery / Redis
+  └── Database    :: PostgreSQL (Multi-AZ Cluster / PostGIS)
 
+[INFRASTRUCTURE & ORCHESTRATION]
+  ├── Container   :: Docker / Containerd
+  ├── Orchestrator:: Kubernetes (k8s)
+  ├── Host Devs   :: AWS / Cloudflare / Nginx
+  └── Monitoring  :: Prometheus / Grafana / Telemetry Logs
 
+[HUMAN INTERFACES]
+  ├── Mobile App  :: Flutter (Dart) Android & iOS
+  ├── Web Panel   :: React / Vite (TypeScript)
+  └── UI & Styling:: Material UI (MUI) / CSS
+```
 
+<p align="center">
+  <img src="./assets/divider.svg" width="100%" />
+</p>
 
+## 🛰️ MESH NETWORK TOPOLOGY
 
+Clinton deploys custom peer-to-peer mesh routing protocols that propagate signals over multiple hops without requiring active cell towers or internet connections.
+
+<p align="center">
+  <img src="./assets/network.svg" width="100%" alt="LoRa Mesh Network Topology Grid" />
+</p>
+
+---
+
+## 📁 FEATURED SYSTEMS
+
+<p align="center">
+  <img src="./assets/projects.svg" width="100%" alt="Featured Projects Panel" />
+</p>
+
+### 1. St. John's Ambulance Dispatch
+* **Scope**: Emergency Medical Response & Real-Time Navigation Fleet.
+* **Problem**: Coordinating response teams requires high-precision coordinate routing, high-throughput telemetry pipelines, and resilient message routing.
+* **Solution**: Engineering a microservices-based real-time dispatch and fleet tracking platform. Utilizes FastAPI microservices connected via Apache Kafka for event-driven telemetry distribution, Redis caching, MinIO object storage for media/logs, and a unified reverse proxy entry point. Renders live tracking on Leaflet maps with React/MUI frontends.
+* **Status**: `🔵 ACTIVE_DEVELOPMENT` | **Stack**: `FastAPI` `Kafka` `Leaflet` `Material UI (MUI)` `Redis` `PostgreSQL` `MinIO` `Reverse Proxy` `Microservices`
+
+### 2. Nacare HMP (Hospital Management Platform)
+* **Scope**: Complete Enterprise Inpatient & Outpatient Management Portal.
+* **Problem**: Streamlining hospital check-ins, triage queues, inpatient ward allocation, and patient billing requires high data integrity and robust UI.
+* **Solution**: Designed a centralized clinical panel handling inpatient admissions, outpatient registry queues, billing accounting ledgers, and check-in triage. Built with high-fidelity React interfaces utilizing Material UI (MUI), backed by Django REST APIs and Kubernetes scaling.
+* **Status**: `🟢 PRODUCTION_ACTIVE` | **Stack**: `React` `Material UI (MUI)` `Django` `PostgreSQL` `Kubernetes`
+
+### 3. LoRaMesh GNSS Tracker Node
+* **Scope**: Offline GPS coordinates mesh network transmitter.
+* **Problem**: Search and rescue or emergency services lack cell network links in remote environments.
+* **Solution**: Engineered a low-power ESP32 firmware running an adaptive mesh routing algorithm. Broadcasts telemetry via SX1276 LoRa transceivers. Syncs coordinates using multi-constellation GNSS channels with battery optimization for 48 hours of transmission.
+* **Status**: `🟣 ACTIVE_FIELD_TESTING` | **Stack**: `ESP32` `C++` `LoRa` `GNSS` `BLE` `RTOS`
+
+---
+
+## 📈 OPERATIONS TIMELINE
+
+A look at the trajectory of designing, engineering, and scaling critical physical and digital infrastructure.
+
+<p align="center">
+  <img src="./assets/timeline.svg" width="100%" alt="Ecosystem Growth Timeline" />
+</p>
+
+---
+
+## 🖥️ SYSTEM BOOT TELEMETRY
+
+A simulated readout of the diagnostic sequence on startup across Clinton's engineering nodes:
+
+<p align="center">
+  <img src="./assets/terminal.svg" width="100%" alt="System Terminal Readout" />
+</p>
+
+---
+
+## 🎚️ CONTROL ROOM STATUS
+
+<p align="center">
+  <img src="./assets/footer.svg" width="100%" alt="Ecosystem Footer Status Module" />
+</p>
+
+<p align="center">
+  <sub>Designed &amp; engineered by <b>Clinton</b>. Built for high-reliability systems. 🚀</sub>
+</p>

@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap');
+      
+      .year-text {
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        font-size: 18px;
+        fill: #06B6D4;
+      }
+      .title-text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        fill: #F8FAFC;
+      }
+      .detail-text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        fill: #94A3B8;
+      }
+      .telemetry-label {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 9px;
+        fill: #64748B;
+      }
+      
+      /* CSS Animations */
+      .radar-sweep {
+        animation: sweep 4s infinite linear;
+      }
+      .pulse-node {
+        animation: pulseMilestone 2.5s infinite ease-in-out;
+      }
+      .draw-wave {
+        animation: waveShift 8s infinite linear;
+      }
+      
+      @keyframes sweep {
+        0% { transform: translateX(-100px); opacity: 0; }
+        15% { opacity: 0.5; }
+        85% { opacity: 0.5; }
+        100% { transform: translateX(1300px); opacity: 0; }
+      }
+      @keyframes pulseMilestone {
+        0%, 100% { r: 5px; stroke-width: 1.5; stroke-opacity: 0.8; }
+        50% { r: 9px; stroke-width: 3; stroke-opacity: 1; }
+      }
+      @keyframes waveShift {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: -200; }
+      }
+    </style>
+    
+    <!-- Neon filters -->
+    <filter id="neonTimeline" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark Canvas -->
+  <rect width="100%" height="100%" fill="#030712" />
+  
+  <!-- Subtle coordinate grid lines -->
+  <line x1="0" y1="50" x2="1200" y2="50" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="0" y1="250" x2="1200" y2="250" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="150" y1="0" x2="150" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="400" y1="0" x2="400" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="650" y1="0" x2="650" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="900" y1="0" x2="900" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="1100" y1="0" x2="1100" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+
+  <!-- Background telemetry waveform representing uptime and signal packets -->
+  <path d="M 0 260 Q 50 240 100 260 T 200 260 T 300 265 T 400 255 T 500 260 T 600 260 T 700 250 T 800 270 T 900 260 T 1000 260 T 1100 255 T 1200 260" stroke="#4F46E5" stroke-opacity="0.2" stroke-width="1.5" />
+  <path d="M 0 260 Q 50 240 100 260 T 200 260 T 300 265 T 400 255 T 500 260 T 600 260 T 700 250 T 800 270 T 900 260 T 1000 260 T 1100 255 T 1200 260" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="10 15" class="draw-wave" />
+  <text x="50" y="280" class="telemetry-label">SYSTEM_THROUGHPUT: 18.2 MB/S (STABLE)</text>
+  <text x="1150" y="280" class="telemetry-label" text-anchor="end">SYS_CLOCK: GPS_SYNCED</text>
+
+  <!-- Timeline Center Pipeline Track -->
+  <line x1="50" y1="150" x2="1150" y2="150" stroke="#ffffff" stroke-opacity="0.08" stroke-width="3" />
+  <line x1="50" y1="150" x2="1150" y2="150" stroke="url(#lineGrad)" stroke-width="1.5" />
+  
+  <!-- Linear Gradient for timeline pipeline -->
+  <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#4F46E5" />
+    <stop offset="50%" stop-color="#06B6D4" />
+    <stop offset="100%" stop-color="#8B5CF6" />
+  </linearGradient>
+
+  <!-- Sweeping Oscilloscope scanning bar -->
+  <line x1="0" y1="10" x2="0" y2="290" stroke="#06B6D4" stroke-opacity="0.6" stroke-width="1.5" filter="url(#neonTimeline)" class="radar-sweep" />
+
+  <!-- MILESTONE 1: 2021 -->
+  <g transform="translate(150, 150)">
+    <circle cx="0" cy="0" r="7" fill="#111827" stroke="#4F46E5" stroke-width="2" class="pulse-node" />
+    <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="-70" class="year-text" text-anchor="middle">2021</text>
+    <text x="0" y="-55" class="title-text" text-anchor="middle">Embedded Foundation</text>
+    
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="55" class="detail-text" text-anchor="middle">ESP32 edge sensors</text>
+    <text x="0" y="70" class="detail-text" text-anchor="middle">BLE communications</text>
+  </g>
+
+  <!-- MILESTONE 2: 2023 -->
+  <g transform="translate(400, 150)">
+    <circle cx="0" cy="0" r="7" fill="#111827" stroke="#4F46E5" stroke-width="2" class="pulse-node" />
+    <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="60" class="year-text" text-anchor="middle">2023</text>
+    <text x="0" y="75" class="title-text" text-anchor="middle">Distributed Mesh Systems</text>
+    
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="-30" class="detail-text" text-anchor="middle">LoRa mesh firmware</text>
+    <text x="0" y="-15" class="detail-text" text-anchor="middle">GNSS tracking logic</text>
+  </g>
+
+  <!-- MILESTONE 3: 2024 -->
+  <g transform="translate(650, 150)">
+    <circle cx="0" cy="0" r="7" fill="#111827" stroke="#06B6D4" stroke-width="2" class="pulse-node" />
+    <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="-70" class="year-text" text-anchor="middle">2024</text>
+    <text x="0" y="-55" class="title-text" text-anchor="middle">Enterprise Operations</text>
+    
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="55" class="detail-text" text-anchor="middle">Django &amp; Postgres clouds</text>
+    <text x="0" y="70" class="detail-text" text-anchor="middle">Kubernetes container nodes</text>
+  </g>
+
+  <!-- MILESTONE 4: 2025 -->
+  <g transform="translate(900, 150)">
+    <circle cx="0" cy="0" r="7" fill="#111827" stroke="#8B5CF6" stroke-width="2" class="pulse-node" />
+    <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#8B5CF6" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="60" class="year-text" text-anchor="middle">2025</text>
+    <text x="0" y="75" class="title-text" text-anchor="middle">Emergency dispatch ecosystem</text>
+    
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#8B5CF6" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="-30" class="detail-text" text-anchor="middle">Flutter client UI suite</text>
+    <text x="0" y="-15" class="detail-text" text-anchor="middle">Biometric data routing</text>
+  </g>
+
+  <!-- CURRENT OPERATION NODE -->
+  <g transform="translate(1100, 150)">
+    <circle cx="0" cy="0" r="8" fill="#111827" stroke="#22C55E" stroke-width="2" class="pulse-node" />
+    <circle cx="0" cy="0" r="4" fill="#22C55E" />
+    <text x="0" y="-25" class="year-text" fill="#22C55E" text-anchor="middle">NOW</text>
+    <text x="0" y="-10" class="title-text" text-anchor="middle" fill="#22C55E">Active Deployments</text>
+  </g>
+</svg>
