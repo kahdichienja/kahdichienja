@@ -184,8 +184,8 @@
     
     <text x="35" y="-5" class="lbl-node">MESH_GATEWAY_01</text>
     <!-- Dynamic overlay tags -->
-    <text x="35" y="8" class="lbl-val" fill="#22C55E" class="primary-online-txt">UPLINK: PRIMARY_CELL (ONLINE)</text>
-    <text x="35" y="8" class="lbl-val" fill="#EF4444" class="primary-offline-txt">UPLINK: FAILOVER_MESH (ACTIVE)</text>
+    <text x="35" y="8" class="lbl-val primary-online-txt" fill="#22C55E">UPLINK: PRIMARY_CELL (ONLINE)</text>
+    <text x="35" y="8" class="lbl-val primary-offline-txt" fill="#EF4444">UPLINK: FAILOVER_MESH (ACTIVE)</text>
   </g>
 
   <!-- 2. PRIMARY CELLULAR UPLINK TOWER -->
@@ -195,8 +195,8 @@
     
     <text x="25" y="-2" class="lbl-node">PRIMARY_CELL_TOWER</text>
     <!-- Live status text overlays -->
-    <text x="25" y="10" class="lbl-val" fill="#22C55E" class="primary-online-txt">STATUS: LINK_NOMINAL (100%)</text>
-    <text x="25" y="10" class="lbl-val" fill="#EF4444" class="primary-offline-txt">STATUS: LINK_OFFLINE (ALERT)</text>
+    <text x="25" y="10" class="lbl-val primary-online-txt" fill="#22C55E">STATUS: LINK_NOMINAL (100%)</text>
+    <text x="25" y="10" class="lbl-val primary-offline-txt" fill="#EF4444">STATUS: LINK_OFFLINE (ALERT)</text>
   </g>
 
   <!-- 3. BACKUP SATELLITE RECEIVER -->
@@ -206,8 +206,8 @@
     <circle cx="0" cy="0" r="4" fill="#8B5CF6" class="backup-led" />
     
     <text x="25" y="-2" class="lbl-node">SATELLITE_UPLINK</text>
-    <text x="25" y="10" class="lbl-val" fill="#64748B" class="primary-online-txt">STATUS: STANDBY (FAILOVER)</text>
-    <text x="25" y="10" class="lbl-val" fill="#06B6D4" class="primary-offline-txt" font-weight="700">STATUS: ACTIVE_FALLBACK</text>
+    <text x="25" y="10" class="lbl-val primary-online-txt" fill="#64748B">STATUS: STANDBY (FAILOVER)</text>
+    <text x="25" y="10" class="lbl-val primary-offline-txt" fill="#06B6D4" font-weight="700">STATUS: ACTIVE_FALLBACK</text>
   </g>
 
   <!-- 4. LORA MESH RELAYS -->
@@ -215,16 +215,16 @@
     <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" class="backup-link" />
     <circle cx="0" cy="0" r="4" fill="#8B5CF6" class="backup-led" />
     <text x="-15" y="-18" class="lbl-node" text-anchor="middle">RELAY_WEST_01</text>
-    <text x="-15" y="-6" class="lbl-val" fill="#64748B" class="primary-online-txt" text-anchor="middle">STANDBY</text>
-    <text x="-15" y="-6" class="lbl-val" fill="#06B6D4" class="primary-offline-txt" text-anchor="middle" font-weight="700">ROUTING (38ms)</text>
+    <text x="-15" y="-6" class="lbl-val primary-online-txt" fill="#64748B" text-anchor="middle">STANDBY</text>
+    <text x="-15" y="-6" class="lbl-val primary-offline-txt" fill="#06B6D4" text-anchor="middle" font-weight="700">ROUTING (38ms)</text>
   </g>
 
   <g transform="translate(320, 175)">
     <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" class="backup-link" />
     <circle cx="0" cy="0" r="4" fill="#8B5CF6" class="backup-led" />
     <text x="-15" y="18" class="lbl-node" text-anchor="middle">RELAY_WEST_02</text>
-    <text x="-15" y="28" class="lbl-val" fill="#64748B" class="primary-online-txt" text-anchor="middle">STANDBY</text>
-    <text x="-15" y="28" class="lbl-val" fill="#06B6D4" class="primary-offline-txt" text-anchor="middle" font-weight="700">ROUTING (42ms)</text>
+    <text x="-15" y="28" class="lbl-val primary-online-txt" fill="#64748B" text-anchor="middle">STANDBY</text>
+    <text x="-15" y="28" class="lbl-val primary-offline-txt" fill="#06B6D4" text-anchor="middle" font-weight="700">ROUTING (42ms)</text>
   </g>
 
   <!-- 5. LEAF SENSOR NODES -->

@@ -79,7 +79,7 @@ The core blueprint details the hybrid network design. When cellular infrastructu
 
 ## 🛠️ TECHNOLOGY ECOSYSTEM
 
-Rather than a simple wall of logos, Clinton's technology stack is organized by structural responsibility in the systems stack:
+Rather than a simple wall of logos, my technology stack is organized by structural responsibility in the systems stack:
 
 ```ini
 [EMBEDDED EDGE LAYER]
@@ -152,7 +152,7 @@ Rather than a simple wall of logos, Clinton's technology stack is organized by s
 
 ## 🛰️ MESH NETWORK TOPOLOGY
 
-Clinton deploys custom peer-to-peer mesh routing protocols that propagate signals over multiple hops without requiring active cell towers or internet connections.
+I deploys custom peer-to-peer mesh routing protocols that propagate signals over multiple hops without requiring active cell towers or internet connections.
 
 <p align="center">
   <img src="./assets/network.svg?v=2" width="100%" alt="LoRa Mesh Network Topology Grid" />
@@ -198,7 +198,7 @@ A look at the trajectory of designing, engineering, and scaling critical physica
 
 ## 🖥️ SYSTEM BOOT TELEMETRY
 
-A simulated readout of the diagnostic sequence on startup across Clinton's engineering nodes:
+A simulated readout of the diagnostic sequence on startup across engineering nodes:
 
 <p align="center">
   <img src="./assets/terminal.svg?v=2" width="100%" alt="System Terminal Readout" />
@@ -213,5 +213,5 @@ A simulated readout of the diagnostic sequence on startup across Clinton's engin
 </p>
 
 <p align="center">
-  <sub>Designed &amp; engineered by <b>Clinton</b>. Built for high-reliability systems. 🚀</sub>
+  <sub>Designed &amp; engineered by <b>Agoo Clinton</b>. Built for high-reliability systems. 🚀</sub>
 </p>

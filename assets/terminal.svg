@@ -77,7 +77,7 @@
   <g mask="url(#logMask)">
     <!-- Base translation container -->
     <g transform="translate(30, 80)">
-      <g class="scroll-container" class="terminal-txt">
+      <g class="scroll-container terminal-txt">
         <!-- FIRST SET OF LOGS (H = 288px) -->
         <!-- Y: 0 -->
         <text x="0" y="0"><tspan class="green-txt">[ OK ]</tspan> Initializing ESP32 edge transceivers (RFM95W LoRa Modules)...</text>
