@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 250" width="100%" height="100%" fill="none">
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&amp;family=JetBrains+Mono&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap');
       
       .lbl-node {
         font-family: 'Outfit', sans-serif;
@@ -11,131 +11,229 @@
       .lbl-val {
         font-family: 'JetBrains Mono', monospace;
         font-size: 9px;
-        fill: #06B6D4;
       }
       
-      /* CSS Animations */
+      /* Standard animations */
       .pulse-ring {
         animation: ringSpread 3s infinite ease-out;
       }
-      .packet-hop {
+      .packet-flow-base {
         animation: hopPath 4s infinite linear;
       }
       
+      /* Failover Cycle Animations (12s total loop) */
+      /* Primary Link State (0s-5s Online, 5s-9s Offline, 9s-12s Online) */
+      .primary-link {
+        animation: primaryLinkCycle 12s infinite linear;
+      }
+      .primary-flow {
+        animation: hopPath 4s infinite linear, primaryFlowCycle 12s infinite linear;
+      }
+      .primary-led {
+        animation: primaryLedCycle 12s infinite linear;
+      }
+      .primary-online-txt {
+        animation: onlineOpacityCycle 12s infinite linear;
+      }
+      .primary-offline-txt {
+        animation: offlineOpacityCycle 12s infinite linear;
+      }
+      
+      /* Backup Link State (0s-5s Standby/Dim, 5s-9s Active/Glowing, 9s-12s Standby/Dim) */
+      .backup-link {
+        animation: backupLinkCycle 12s infinite linear;
+      }
+      .backup-flow {
+        animation: hopPath 3s infinite linear, backupFlowCycle 12s infinite linear;
+      }
+      .backup-led {
+        animation: backupLedCycle 12s infinite linear;
+      }
+      .backup-alert-txt {
+        animation: offlineOpacityCycle 12s infinite linear;
+      }
+      .nominal-led {
+        animation: primaryLedCycle 12s infinite linear;
+      }
+
       @keyframes ringSpread {
         0% { r: 6px; opacity: 0.8; stroke-width: 1px; }
         100% { r: 24px; opacity: 0; stroke-width: 0.5px; }
       }
       @keyframes hopPath {
-        from { stroke-dashoffset: 60; }
+        from { stroke-dashoffset: 80; }
         to { stroke-dashoffset: 0; }
+      }
+      
+      /* Failover Timing keyframes */
+      @keyframes primaryLinkCycle {
+        0%, 41.6% { stroke: #22C55E; stroke-opacity: 0.8; stroke-dasharray: none; }
+        41.7%, 75% { stroke: #EF4444; stroke-opacity: 0.15; stroke-dasharray: 4 4; }
+        75.1%, 100% { stroke: #22C55E; stroke-opacity: 0.8; stroke-dasharray: none; }
+      }
+      @keyframes primaryFlowCycle {
+        0%, 41.6% { opacity: 0.8; }
+        41.7%, 75% { opacity: 0; }
+        75.1%, 100% { opacity: 0.8; }
+      }
+      @keyframes primaryLedCycle {
+        0%, 41.6% { fill: #22C55E; }
+        41.7%, 75% { fill: #EF4444; }
+        75.1%, 100% { fill: #22C55E; }
+      }
+      @keyframes onlineOpacityCycle {
+        0%, 41.6% { opacity: 1; }
+        41.7%, 75% { opacity: 0; }
+        75.1%, 100% { opacity: 1; }
+      }
+      @keyframes offlineOpacityCycle {
+        0%, 41.6% { opacity: 0; }
+        41.7%, 75% { opacity: 1; }
+        75.1%, 100% { opacity: 0; }
+      }
+      @keyframes backupLinkCycle {
+        0%, 41.6% { stroke: #8B5CF6; stroke-opacity: 0.15; }
+        41.7%, 75% { stroke: #06B6D4; stroke-opacity: 0.85; }
+        75.1%, 100% { stroke: #8B5CF6; stroke-opacity: 0.15; }
+      }
+      @keyframes backupFlowCycle {
+        0%, 41.6% { opacity: 0; }
+        41.7%, 75% { opacity: 0.85; }
+        75.1%, 100% { opacity: 0; }
+      }
+      @keyframes backupLedCycle {
+        0%, 41.6% { fill: #8B5CF6; fill-opacity: 0.4; }
+        41.7%, 75% { fill: #06B6D4; fill-opacity: 1; }
+        75.1%, 100% { fill: #8B5CF6; fill-opacity: 0.4; }
       }
     </style>
     
-    <linearGradient id="meshGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.1" />
-      <stop offset="50%" stop-color="#06B6D4" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.1" />
-    </linearGradient>
+    <filter id="glowGreen" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="glowRed" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
 
-  <!-- Deep Canvas -->
+  <!-- Deep Background -->
   <rect width="100%" height="100%" fill="#030712" />
 
-  <!-- DOTTED BLUEPRINT BACKDROP -->
-  <circle cx="200" cy="50" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="400" cy="50" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="600" cy="50" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="800" cy="50" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="1000" cy="50" r="1" fill="#ffffff" fill-opacity="0.1" />
-  
-  <circle cx="200" cy="125" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="400" cy="125" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="600" cy="125" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="800" cy="125" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="1000" cy="125" r="1" fill="#ffffff" fill-opacity="0.1" />
+  <!-- DOTTED COORDINATES BASE -->
+  <g opacity="0.08">
+    <circle cx="200" cy="50" r="1.5" fill="#ffffff" />
+    <circle cx="400" cy="50" r="1.5" fill="#ffffff" />
+    <circle cx="600" cy="50" r="1.5" fill="#ffffff" />
+    <circle cx="800" cy="50" r="1.5" fill="#ffffff" />
+    <circle cx="1000" cy="50" r="1.5" fill="#ffffff" />
+    <circle cx="200" cy="125" r="1.5" fill="#ffffff" />
+    <circle cx="400" cy="125" r="1.5" fill="#ffffff" />
+    <circle cx="600" cy="125" r="1.5" fill="#ffffff" />
+    <circle cx="800" cy="125" r="1.5" fill="#ffffff" />
+    <circle cx="1000" cy="125" r="1.5" fill="#ffffff" />
+    <circle cx="200" cy="200" r="1.5" fill="#ffffff" />
+    <circle cx="400" cy="200" r="1.5" fill="#ffffff" />
+    <circle cx="600" cy="200" r="1.5" fill="#ffffff" />
+    <circle cx="800" cy="200" r="1.5" fill="#ffffff" />
+    <circle cx="1000" cy="200" r="1.5" fill="#ffffff" />
+  </g>
 
-  <circle cx="200" cy="200" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="400" cy="200" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="600" cy="200" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="800" cy="200" r="1" fill="#ffffff" fill-opacity="0.1" />
-  <circle cx="1000" cy="200" r="1" fill="#ffffff" fill-opacity="0.1" />
+  <!-- ================= UPLINK PATHS (Gateway to Uplinks) ================= -->
+  <!-- Primary Cellular Path -->
+  <path d="M 500 125 L 850 60" stroke="#22C55E" stroke-opacity="0.8" stroke-width="2.5" class="primary-link" />
+  <path d="M 500 125 L 850 60" stroke="#06B6D4" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="10 80" class="primary-flow" />
 
-  <!-- STATIC ROUTING PATHS -->
-  <path d="M 600 125 L 400 75 M 600 125 L 450 175 M 600 125 L 750 75 M 600 125 L 800 175" stroke="#ffffff" stroke-opacity="0.05" stroke-width="2" />
-  <path d="M 400 75 L 200 50 M 400 75 L 220 125 M 450 175 L 220 125 M 450 175 L 200 200" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="1.5" />
-  <path d="M 750 75 L 980 50 M 750 75 L 1000 125 M 800 175 L 1000 125 M 800 175 L 980 200" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="1.5" />
+  <!-- Secondary Satellite / Backup Path -->
+  <path d="M 500 125 L 850 180" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="2" class="backup-link" />
+  <path d="M 500 125 L 850 180" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 60" class="backup-flow" />
 
-  <!-- ACTIVE MESH ROUTING DATA FLOWS -->
-  <path d="M 200 50 L 400 75" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 30" class="packet-hop" />
-  <path d="M 200 200 L 450 175" stroke="#8B5CF6" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 30" class="packet-hop" />
-  <path d="M 400 75 L 600 125" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 40" class="packet-hop" />
-  <path d="M 450 175 L 600 125" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 35" class="packet-hop" />
-  
-  <path d="M 1000 125 L 750 75" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-dasharray="10 40" class="packet-hop" />
-  <path d="M 750 75 L 600 125" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 35" class="packet-hop" />
 
-  <!-- CENTRAL GATEWAY NODE -->
-  <g transform="translate(600, 125)">
-    <circle cx="0" cy="0" r="28" fill="#111827" stroke="#06B6D4" stroke-width="2" />
-    <circle cx="0" cy="0" r="16" fill="#030712" stroke="#4F46E5" stroke-width="1.5" />
-    <circle cx="0" cy="0" r="5" fill="#22C55E" />
-    <circle cx="0" cy="0" r="6" stroke="#22C55E" stroke-width="1" class="pulse-ring" />
+  <!-- ================= LORA MESH PATHS ================= -->
+  <path d="M 300 75 L 500 125 M 320 175 L 500 125" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="2" class="backup-link" />
+  <path d="M 300 75 L 500 125 M 320 175 L 500 125" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 50" class="backup-flow" />
+
+  <!-- Outer Sensor to Relay links -->
+  <path d="M 120 50 L 300 75 M 140 125 L 300 75 M 140 125 L 320 175 M 120 200 L 320 175" stroke="#8B5CF6" stroke-opacity="0.15" stroke-width="1.5" class="backup-link" />
+  <path d="M 120 50 L 300 75 M 140 125 L 300 75 M 140 125 L 320 175 M 120 200 L 320 175" stroke="#06B6D4" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="6 35" class="backup-flow" />
+
+
+  <!-- ================= NODES ================= -->
+
+  <!-- 1. CENTRAL GATEWAY NODE -->
+  <g transform="translate(500, 125)">
+    <circle cx="0" cy="0" r="28" fill="#111827" stroke="#4F46E5" stroke-width="2" />
+    <circle cx="0" cy="0" r="16" fill="#030712" stroke="#06B6D4" stroke-width="1.5" />
+    <!-- Node status LED updates dynamically -->
+    <circle cx="0" cy="0" r="5" fill="#22C55E" class="nominal-led" />
+    <circle cx="0" cy="0" r="7" stroke="#22C55E" stroke-width="1" class="pulse-ring" />
+    
     <text x="35" y="-5" class="lbl-node">MESH_GATEWAY_01</text>
-    <text x="35" y="8" class="lbl-val">ONLINE (CELLULAR / GNSS_LOCK)</text>
+    <!-- Dynamic overlay tags -->
+    <text x="35" y="8" class="lbl-val" fill="#22C55E" class="primary-online-txt">UPLINK: PRIMARY_CELL (ONLINE)</text>
+    <text x="35" y="8" class="lbl-val" fill="#EF4444" class="primary-offline-txt">UPLINK: FAILOVER_MESH (ACTIVE)</text>
   </g>
 
-  <!-- LEFT MESH RELAYS -->
-  <g transform="translate(400, 75)">
-    <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-    <circle cx="0" cy="0" r="4" fill="#06B6D4" />
-    <circle cx="0" cy="0" r="6" stroke="#06B6D4" stroke-width="1" class="pulse-ring" />
+  <!-- 2. PRIMARY CELLULAR UPLINK TOWER -->
+  <g transform="translate(850, 60)">
+    <circle cx="0" cy="0" r="18" fill="#111827" stroke="#22C55E" stroke-width="1.5" class="primary-led" />
+    <circle cx="0" cy="0" r="4" fill="#22C55E" class="primary-led" />
+    
+    <text x="25" y="-2" class="lbl-node">PRIMARY_CELL_TOWER</text>
+    <!-- Live status text overlays -->
+    <text x="25" y="10" class="lbl-val" fill="#22C55E" class="primary-online-txt">STATUS: LINK_NOMINAL (100%)</text>
+    <text x="25" y="10" class="lbl-val" fill="#EF4444" class="primary-offline-txt">STATUS: LINK_OFFLINE (ALERT)</text>
+  </g>
+
+  <!-- 3. BACKUP SATELLITE RECEIVER -->
+  <g transform="translate(850, 180)">
+    <circle cx="0" cy="0" r="18" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" class="backup-link" />
+    <!-- Pulse tag when active -->
+    <circle cx="0" cy="0" r="4" fill="#8B5CF6" class="backup-led" />
+    
+    <text x="25" y="-2" class="lbl-node">SATELLITE_UPLINK</text>
+    <text x="25" y="10" class="lbl-val" fill="#64748B" class="primary-online-txt">STATUS: STANDBY (FAILOVER)</text>
+    <text x="25" y="10" class="lbl-val" fill="#06B6D4" class="primary-offline-txt" font-weight="700">STATUS: ACTIVE_FALLBACK</text>
+  </g>
+
+  <!-- 4. LORA MESH RELAYS -->
+  <g transform="translate(300, 75)">
+    <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" class="backup-link" />
+    <circle cx="0" cy="0" r="4" fill="#8B5CF6" class="backup-led" />
     <text x="-15" y="-18" class="lbl-node" text-anchor="middle">RELAY_WEST_01</text>
-    <text x="-15" y="-6" class="lbl-val" text-anchor="middle">RSSI -74dBm</text>
+    <text x="-15" y="-6" class="lbl-val" fill="#64748B" class="primary-online-txt" text-anchor="middle">STANDBY</text>
+    <text x="-15" y="-6" class="lbl-val" fill="#06B6D4" class="primary-offline-txt" text-anchor="middle" font-weight="700">ROUTING (38ms)</text>
   </g>
 
-  <g transform="translate(450, 175)">
-    <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-    <circle cx="0" cy="0" r="4" fill="#8B5CF6" />
+  <g transform="translate(320, 175)">
+    <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" class="backup-link" />
+    <circle cx="0" cy="0" r="4" fill="#8B5CF6" class="backup-led" />
     <text x="-15" y="18" class="lbl-node" text-anchor="middle">RELAY_WEST_02</text>
-    <text x="-15" y="28" class="lbl-val" text-anchor="middle">RSSI -81dBm</text>
+    <text x="-15" y="28" class="lbl-val" fill="#64748B" class="primary-online-txt" text-anchor="middle">STANDBY</text>
+    <text x="-15" y="28" class="lbl-val" fill="#06B6D4" class="primary-offline-txt" text-anchor="middle" font-weight="700">ROUTING (42ms)</text>
   </g>
 
-  <!-- RIGHT MESH RELAYS -->
-  <g transform="translate(750, 75)">
-    <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-    <circle cx="0" cy="0" r="4" fill="#06B6D4" />
-    <circle cx="0" cy="0" r="6" stroke="#06B6D4" stroke-width="1" class="pulse-ring" />
-    <text x="15" y="-18" class="lbl-node" text-anchor="middle">RELAY_EAST_01</text>
-    <text x="15" y="-6" class="lbl-val" text-anchor="middle">RSSI -68dBm</text>
-  </g>
+  <!-- 5. LEAF SENSOR NODES -->
+  <circle cx="120" cy="50" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="105" y="48" class="lbl-val" fill="#64748B" text-anchor="end">NODE_S01</text>
 
-  <g transform="translate(800, 175)">
-    <circle cx="0" cy="0" r="12" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-    <circle cx="0" cy="0" r="4" fill="#8B5CF6" />
-    <text x="15" y="18" class="lbl-node" text-anchor="middle">RELAY_EAST_02</text>
-    <text x="15" y="28" class="lbl-val" text-anchor="middle">RSSI -85dBm</text>
-  </g>
+  <circle cx="140" cy="125" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="125" y="123" class="lbl-val" fill="#64748B" text-anchor="end">NODE_S02</text>
 
-  <!-- LEAF SENSOR NODES -->
-  <!-- Left Nodes -->
-  <circle cx="200" cy="50" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-  <text x="185" y="48" class="lbl-mono" text-anchor="end">NODE_S01</text>
-
-  <circle cx="220" cy="125" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-  <text x="205" y="123" class="lbl-mono" text-anchor="end">NODE_S02</text>
-
-  <circle cx="200" cy="200" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-  <text x="185" y="198" class="lbl-mono" text-anchor="end">NODE_S03</text>
-
-  <!-- Right Nodes -->
-  <circle cx="980" cy="50" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-  <text x="995" y="48" class="lbl-mono" text-anchor="start">NODE_S04</text>
-
-  <circle cx="1000" cy="125" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-  <circle cx="1000" cy="125" r="8" stroke="#06B6D4" stroke-width="0.5" class="pulse-ring" />
-  <text x="1015" y="123" class="lbl-mono" text-anchor="start">NODE_S05</text>
-
-  <circle cx="980" cy="200" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
-  <text x="995" y="198" class="lbl-mono" text-anchor="start">NODE_S06</text>
+  <circle cx="120" cy="200" r="5" fill="#111827" stroke="#8B5CF6" stroke-width="1.5" />
+  <text x="105" y="198" class="lbl-val" fill="#64748B" text-anchor="end">NODE_S03</text>
 </svg>

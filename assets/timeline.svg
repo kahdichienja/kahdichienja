@@ -6,13 +6,13 @@
       .year-text {
         font-family: 'JetBrains Mono', monospace;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
         fill: #06B6D4;
       }
       .title-text {
         font-family: 'Outfit', sans-serif;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 13px;
         fill: #F8FAFC;
       }
       .detail-text {
@@ -70,16 +70,16 @@
   <!-- Subtle coordinate grid lines -->
   <line x1="0" y1="50" x2="1200" y2="50" stroke="#ffffff" stroke-opacity="0.02" />
   <line x1="0" y1="250" x2="1200" y2="250" stroke="#ffffff" stroke-opacity="0.02" />
-  <line x1="150" y1="0" x2="150" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
-  <line x1="400" y1="0" x2="400" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
-  <line x1="650" y1="0" x2="650" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
-  <line x1="900" y1="0" x2="900" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
-  <line x1="1100" y1="0" x2="1100" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="120" y1="0" x2="120" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="360" y1="0" x2="360" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="600" y1="0" x2="600" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="840" y1="0" x2="840" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
+  <line x1="1080" y1="0" x2="1080" y2="300" stroke="#ffffff" stroke-opacity="0.02" />
 
-  <!-- Background telemetry waveform representing uptime and signal packets -->
+  <!-- Background telemetry waveform -->
   <path d="M 0 260 Q 50 240 100 260 T 200 260 T 300 265 T 400 255 T 500 260 T 600 260 T 700 250 T 800 270 T 900 260 T 1000 260 T 1100 255 T 1200 260" stroke="#4F46E5" stroke-opacity="0.2" stroke-width="1.5" />
   <path d="M 0 260 Q 50 240 100 260 T 200 260 T 300 265 T 400 255 T 500 260 T 600 260 T 700 250 T 800 270 T 900 260 T 1000 260 T 1100 255 T 1200 260" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="10 15" class="draw-wave" />
-  <text x="50" y="280" class="telemetry-label">SYSTEM_THROUGHPUT: 18.2 MB/S (STABLE)</text>
+  <text x="50" y="280" class="telemetry-label">SYSTEM_THROUGHPUT: 24.8 MB/S (STABLE)</text>
   <text x="1150" y="280" class="telemetry-label" text-anchor="end">SYS_CLOCK: GPS_SYNCED</text>
 
   <!-- Timeline Center Pipeline Track -->
@@ -96,63 +96,68 @@
   <!-- Sweeping Oscilloscope scanning bar -->
   <line x1="0" y1="10" x2="0" y2="290" stroke="#06B6D4" stroke-opacity="0.6" stroke-width="1.5" filter="url(#neonTimeline)" class="radar-sweep" />
 
-  <!-- MILESTONE 1: 2021 -->
-  <g transform="translate(150, 150)">
+  <!-- MILESTONE 1: 2019 (Migori County Referral Hospital) -->
+  <g transform="translate(120, 150)">
     <circle cx="0" cy="0" r="7" fill="#111827" stroke="#4F46E5" stroke-width="2" class="pulse-node" />
     <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
     <line x1="0" y1="0" x2="0" y2="-45" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
-    <text x="0" y="-70" class="year-text" text-anchor="middle">2021</text>
-    <text x="0" y="-55" class="title-text" text-anchor="middle">Embedded Foundation</text>
+    <text x="0" y="-70" class="year-text" text-anchor="middle">2019</text>
+    <text x="0" y="-55" class="title-text" text-anchor="middle">IT &amp; Support Systems</text>
     
     <line x1="0" y1="0" x2="0" y2="35" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
-    <text x="0" y="55" class="detail-text" text-anchor="middle">ESP32 edge sensors</text>
-    <text x="0" y="70" class="detail-text" text-anchor="middle">BLE communications</text>
+    <text x="0" y="55" class="detail-text" text-anchor="middle">Migori County Hospital</text>
+    <text x="0" y="70" class="detail-text" text-anchor="middle">DHIS2 &amp; CPIMS Systems</text>
   </g>
 
-  <!-- MILESTONE 2: 2023 -->
-  <g transform="translate(400, 150)">
+  <!-- MILESTONE 2: 2020 - 2023 (SOS Networks) -->
+  <g transform="translate(360, 150)">
     <circle cx="0" cy="0" r="7" fill="#111827" stroke="#4F46E5" stroke-width="2" class="pulse-node" />
     <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
     <line x1="0" y1="0" x2="0" y2="35" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
-    <text x="0" y="60" class="year-text" text-anchor="middle">2023</text>
-    <text x="0" y="75" class="title-text" text-anchor="middle">Distributed Mesh Systems</text>
+    <text x="0" y="60" class="year-text" text-anchor="middle">2020 - 2023</text>
+    <text x="0" y="75" class="title-text" text-anchor="middle">Mobile App Developer</text>
     
     <line x1="0" y1="0" x2="0" y2="-45" stroke="#4F46E5" stroke-opacity="0.4" stroke-width="1" />
-    <text x="0" y="-30" class="detail-text" text-anchor="middle">LoRa mesh firmware</text>
-    <text x="0" y="-15" class="detail-text" text-anchor="middle">GNSS tracking logic</text>
+    <text x="0" y="-30" class="detail-text" text-anchor="middle">SOS Networks (Nairobi)</text>
+    <text x="0" y="-15" class="detail-text" text-anchor="middle">Flutter + Python (AWS)</text>
   </g>
 
-  <!-- MILESTONE 3: 2024 -->
-  <g transform="translate(650, 150)">
+  <!-- MILESTONE 3: 2023 - 2024 (MetaStride Fullstack/BLE) -->
+  <g transform="translate(600, 150)">
     <circle cx="0" cy="0" r="7" fill="#111827" stroke="#06B6D4" stroke-width="2" class="pulse-node" />
     <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
     <line x1="0" y1="0" x2="0" y2="-45" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="1" />
-    <text x="0" y="-70" class="year-text" text-anchor="middle">2024</text>
-    <text x="0" y="-55" class="title-text" text-anchor="middle">Enterprise Operations</text>
+    <text x="0" y="-70" class="year-text" text-anchor="middle">2023 - 2024</text>
+    <text x="0" y="-55" class="title-text" text-anchor="middle">Fullstack Developer</text>
     
     <line x1="0" y1="0" x2="0" y2="35" stroke="#06B6D4" stroke-opacity="0.4" stroke-width="1" />
-    <text x="0" y="55" class="detail-text" text-anchor="middle">Django &amp; Postgres clouds</text>
-    <text x="0" y="70" class="detail-text" text-anchor="middle">Kubernetes container nodes</text>
+    <text x="0" y="55" class="detail-text" text-anchor="middle">MetaStride (Tampa, FL)</text>
+    <text x="0" y="70" class="detail-text" text-anchor="middle">BLE &amp; Horse Training App</text>
   </g>
 
-  <!-- MILESTONE 4: 2025 -->
-  <g transform="translate(900, 150)">
+  <!-- MILESTONE 4: 2025 (MetaStride Embedded/GPS) -->
+  <g transform="translate(840, 150)">
     <circle cx="0" cy="0" r="7" fill="#111827" stroke="#8B5CF6" stroke-width="2" class="pulse-node" />
     <circle cx="0" cy="0" r="3" fill="#F8FAFC" />
     <line x1="0" y1="0" x2="0" y2="35" stroke="#8B5CF6" stroke-opacity="0.4" stroke-width="1" />
     <text x="0" y="60" class="year-text" text-anchor="middle">2025</text>
-    <text x="0" y="75" class="title-text" text-anchor="middle">Emergency dispatch ecosystem</text>
+    <text x="0" y="75" class="title-text" text-anchor="middle">Embedded Developer</text>
     
     <line x1="0" y1="0" x2="0" y2="-45" stroke="#8B5CF6" stroke-opacity="0.4" stroke-width="1" />
-    <text x="0" y="-30" class="detail-text" text-anchor="middle">Flutter client UI suite</text>
-    <text x="0" y="-15" class="detail-text" text-anchor="middle">Biometric data routing</text>
+    <text x="0" y="-30" class="detail-text" text-anchor="middle">MetaStride (ESP32/GNSS)</text>
+    <text x="0" y="-15" class="detail-text" text-anchor="middle">GPS Firmware &amp; SD-Card APIs</text>
   </g>
 
-  <!-- CURRENT OPERATION NODE -->
-  <g transform="translate(1100, 150)">
+  <!-- CURRENT OPERATION NODE: 2025 - Present (DevOps & St. John's) -->
+  <g transform="translate(1080, 150)">
     <circle cx="0" cy="0" r="8" fill="#111827" stroke="#22C55E" stroke-width="2" class="pulse-node" />
     <circle cx="0" cy="0" r="4" fill="#22C55E" />
-    <text x="0" y="-25" class="year-text" fill="#22C55E" text-anchor="middle">NOW</text>
-    <text x="0" y="-10" class="title-text" text-anchor="middle" fill="#22C55E">Active Deployments</text>
+    <line x1="0" y1="0" x2="0" y2="-45" stroke="#22C55E" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="-70" class="year-text" fill="#22C55E" text-anchor="middle">PRESENT</text>
+    <text x="0" y="-55" class="title-text" text-anchor="middle" fill="#22C55E">DevOps &amp; Microservices</text>
+    
+    <line x1="0" y1="0" x2="0" y2="35" stroke="#22C55E" stroke-opacity="0.4" stroke-width="1" />
+    <text x="0" y="55" class="detail-text" text-anchor="middle">K8s Chaos Engineering</text>
+    <text x="0" y="70" class="detail-text" text-anchor="middle">St. John's Dispatch</text>
   </g>
 </svg>

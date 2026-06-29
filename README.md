@@ -19,6 +19,10 @@
   </tr>
 </table>
 
+<p align="center">
+  <img src="./assets/github-telemetry.svg?v=2" width="100%" alt="Clinton's GitHub Telemetry Server Rack" />
+</p>
+
 ---
 
 ## 🎛️ MISSION CONTROL PANEL
@@ -106,6 +110,41 @@ Rather than a simple wall of logos, Clinton's technology stack is organized by s
   ├── Web Panel   :: React / Vite (TypeScript)
   └── UI & Styling:: Material UI (MUI) / CSS
 ```
+
+---
+
+## 💼 OPERATIONAL DEPLOYMENTS
+
+### 🛰️ Embedded Systems Developer | [MetaStride](https://www.meta-stride.com)
+*Jan 2025 – July 2025*
+- **Edge GPS Tracking**: Engineered firmware for ESP32 devices to collect GNSS/GPS workout data and store it locally on SD cards with custom file system operations.
+- **Wireless Sync**: Implemented Wi-Fi upload protocols to synchronize local binary telemetry records to cloud servers.
+- **Mobile Integration**: Designed and implemented an HTTP API allowing a Flutter client app to manage device recording states, storage allocations, and memory flushes.
+
+### 🧬 DevOps Engineer (Projects)
+*2025 – Present*
+- **Cloud Orchestration**: Developed and deployed a Laravel + React application to DigitalOcean using Docker and Kubernetes clusters.
+- **Chaos Engineering**: Introduced failure injection, latency simulation, and node-kill experiments to validate high availability.
+- **Automation Pipelines**: Automated operational workflows via CI/CD pipelines (GitHub Actions, GitLab CI) and Infrastructure-as-Code.
+
+### 💻 FullStack Developer | [MetaStride](https://www.meta-stride.com)
+*2023 – Dec 2024*
+- **BLE Integration**: Bluetooth Low Energy (BLE) integration specialist for horse training telemetry applications using `Flutter Blue`.
+- **Data Pipelines**: Designed processing and validation pipelines for real-time speed, distance, and athletic metrics.
+
+### 📱 Senior Mobile & Web Developer | Horse Owners World
+*12/2021 – 12/2023*
+- **Platform Coordination**: Led development of the Flutter mobile application alongside three React-based management dashboards.
+
+### 🛠️ Mobile Application Developer | SOS Networks
+*12/2020 – 05/2023*
+- **Video Architecture**: Engineered a high-performance video-sharing application using Flutter and Python APIs hosted on AWS.
+- **Database Optimization**: Reduced AWS RDS database costs by optimizing queries, restructuring schemas, and implementing connection pooling.
+
+### 🏥 IT & Support Systems | Migori County Referral Hospital
+*07/2019 – 11/2019*
+- **Health Information Systems**: Worked with DHIS2 creating pivot tables and data aggregation systems for hospital metrics.
+- **Child Protection (CPIMS)**: Contributed to the enhancement of the Child Protection Information Management System supporting infant data tracking.
 
 <p align="center">
   <img src="./assets/divider.svg?v=2" width="100%" />
